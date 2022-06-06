@@ -1,4 +1,4 @@
-# Seminario - Machine Learning: Regressione Lineare e Logistica e loro applicazioni
+# Seminario Calcolo Numerico A.A 2021/2022 - Machine Learning: Regressione Lineare e Logistica e loro applicazioni
 
 <p align='justify'> Un algoritmo di <b>Machine Learning</b> è un algoritmo in grado di apprendere dai dati. Per capire il significato di apprendere si fa riferimento alla definizione di Tom Mitchell: </p>
 
@@ -21,5 +21,8 @@ Si riportano i casi di applicazione che saranno presi in esame:
 3. Previsione positività al SARS-CoV2 (COVID19) di un paziente.
 
 In tutti e tre i casi, a partire da un insieme di dati iniziali $x$ e di uscite corrispondenti $y$, viene addestrato un modello con un opportuno algoritmo di ottimizzazione per apprendere la relazione che sussiste tra l'ingresso e l'uscita. In tal modo sarà possibile, a partire da nuovi dati di ingresso $\hat{x}$, stimare l'uscita corrispondente $\hat{y}$.
+ </p>
 
-In questo lavoro saranno approfonditi i modelli di Regressione Lineare e di Regressione Logistica, evidenziandone le differenze e la base teorica. </p>
+
+# Progetto realizzato per soli scopi dimostrativi e didattici
+Nella seguente trattazione sono approfonditi i modelli di Regressione Lineare e di Regressione Logistica, evidenziandone le differenze e la base teorica. per l'esame di Calcolo Numerico all'Università degli Studi di Napoli Federico II.
