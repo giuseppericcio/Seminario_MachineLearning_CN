@@ -1,46 +1,25 @@
-# Seminario - Modelli Predittivi per il Calcolo Numerico
+# Seminario - Machine Learning: Regressione Lineare e Logistica e loro applicazioni
 
-La Modellazione Predittiva è una tecnica del Machine Learning, uno dei canali per
-l’applicazione dell’Intelligenza Artificiale, che da anni ormai è in sviluppo in diversi ambiti
-applicativi.
-Implementare modelli predittivi a supporto di processi vuol dire prevedere che cosa potrebbe
-accadere in futuro, cosa non da poco se ragioniamo in termini di performance aziendali e non.
-Come nella vita, anche in queste situazioni prevale la logica che ”prevedere è meglio che
-curare”, per evitare di dover sostenere maggiori costi in caso di complicanze non pianificate.
+<p align='justify'> Un algoritmo di **Machine Learning** è un algoritmo in grado di apprendere dai dati. Per capire il significato di apprendere si fa riferimento alla definizione di Tom Mitchell: </p>
 
-La sua trasversalità emerge in progetti che variano dalla manutenzione predittiva per poter
-reagire in maniera tempestiva ad eventuali guasti, al rilevamento di frodi (es. attraverso
-l’identificazione di anomalie nei dati), dall’analisi qualità nei processi produttivi alla gestione
-magazzino e logistica, fino ai servizi finanziari, marketing e analisi delle reti sociali.
+> "Un programma apprende dall'esperienza E rispetto a un task T e a una misura delle sue prestazioni P se le prestazioni del programma sul task T, misurate da P, migliorano con l'esperienza E"
 
-I casi di applicazione che saranno presi in esame saranno:
-<br> • Previsione del costo di un immobile.
-<br> • Previsione assicurativa medicale.
-<br> • Previsione potenziale al SARS-CoV2 (COVID19) di un paziente.
+<p align='justify'> Il Machine Learning ci consente di risolvere problemi che sarebbero troppo complessi da trattare con le tecniche tradizionali di programmazione. Si supponga a tal proposito di voler realizzare un algoritmo di Machine Learning in grado di individuare email spam a partire da alcuni esempi di email spam e regolari, che costituiscono il nostro training set. In questo caso il task T è l'individuazione di email spam, l'esperienza E è data dal training set e una possibile misura per le prestazioni P è l'accuracy, ossia la frazione di email  correttamente individuate dall'algoritmo.
+Realizzare lo stesso algoritmo con le tecniche di programmazione tradizionale richiederebbe la ricerca di pattern ricorrenti nelle email spam. Il tutto si riduce alla scrittura di regole lunghe e complesse, ma soprattutto difficili da manutenere. Un programma basato sul Machine Learning invece è in grado, attraverso un algoritmo di apprendimento, di imparare automaticamente quali sono le caratteristiche di una email tali da renderla spam. Riusciamo così a ottenere risultati più affidabili e un programma più breve e facile da manutenere. Eventuali cambiamenti dei pattern nelle email spam saranno appresi automaticamente dal modello di Machine Learning, senza intervento umano, mentre in un programma tradizionale sarebbe necessario individuare manualmente tali pattern per poi aggiornare le regole.
 
-Ognuno di essi applicato ad uno specifico modello di predizione.
-In generale, come funziona? Basandosi su un set di variabili di input x, l’analisi predittiva
-addestra un modello allo scopo di prevedere i valori futuri dei nuovi dati y, la relazione
-matematica del problema pu`o essere rappresentata in questa maniera:
+I modelli di Machine Learning hanno applicazione in numerosi ambiti: nella manutenzione predittiva permettono di reagire in maniera tempestiva alla rilevazione di eventuali anomalie nei dati o guasti. Possono anche essere utilizzati per prevedere eventi futuri come l'andamento del prezzo di un'azione, previsioni metereologiche e persino i risultati delle elezioni presidenziali americane. 
+Come nella vita, anche in queste situazioni prevale la logica che: </p>
 
-<br> z = ax + b (1)
-<br> y = σ(z) (2)
+> "Prevedere è meglio che curare"
 
-In cui, i parametri a, b = θ, devono essere determinati in maniera opportuna tramite un
-metodo esatto oppure euristico come vedremo in seguito, mentre la funzione di attivazione
-σ è un’opportuna funzione che permette di convertire la variabile continua z in una variabile
-categorica ovvero che appartiene ad una specifica classe.
-Il modello identifica quindi le relazioni e i pattern che legano le variabili, assegnando anche
-un punteggio in base agli elementi che è stato addestrato a cercare.
-Dunque, tale punteggio può essere utilizzato come Business Intelligence per valutare il rischio
-o i potenziali vantaggi di una serie di condizioni e consente di determinare la probabilità che
-un determinato evento si verifichi.
-Una delle tecniche di modellazione predittiva più diffusa è la regressione. In questo trattato
-verranno studiate, in particolare, la Regressione Lineare e la Regressione Logistica
-motivando risposte e differenze. I modelli di regressione utilizzano calcoli numerici per
-identificare le relazioni fra le variabili in gioco.
-In generale i modelli di regressione lineari restituiscono risultati continui con infinite possi-
-bilità (come il potenziale valore degli immobili a partire da un determinato costo al metro
-quadrato), mentre quelli logistici restituiscono un numero di possibilità limitato (ad esem-
-pio se una determinata abitazione in un quartiere specifico verrà venduta sopra o sotto un
-determinato prezzo)
+<p align='justify'> Evitiamo così di dover sostenere maggiori costi in caso di complicazioni non pianificate.
+
+Si riportano i casi di applicazione che saranno presi in esame:
+
+1. Previsione del costo di un immobile.
+2. Previsione del costo assicurazione.
+3. Previsione positività al SARS-CoV2 (COVID19) di un paziente.
+
+In tutti e tre i casi, a partire da un insieme di dati iniziali $x$ e di uscite corrispondenti $y$, viene addestrato un modello con un opportuno algoritmo di ottimizzazione per apprendere la relazione che sussiste tra l'ingresso e l'uscita. In tal modo sarà possibile, a partire da nuovi dati di ingresso $\hat{x}$, stimare l'uscita corrispondente $\hat{y}$.
+
+In questo lavoro saranno approfonditi i modelli di Regressione Lineare e di Regressione Logistica, evidenziandone le differenze e la base teorica. </p>
