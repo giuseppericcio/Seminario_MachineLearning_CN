@@ -23,6 +23,44 @@ Si riportano i casi di applicazione che saranno presi in esame:
 In tutti e tre i casi, a partire da un insieme di dati iniziali $x$ e di uscite corrispondenti $y$, viene addestrato un modello con un opportuno algoritmo di ottimizzazione per apprendere la relazione che sussiste tra l'ingresso e l'uscita. In tal modo sarà possibile, a partire da nuovi dati di ingresso $\hat{x}$, stimare l'uscita corrispondente $\hat{y}$.
  </p>
 
+# Esempio di Predizione del modello SARS-Cov2 (COVID19)
+Per l'implementazione completa -> Seminario_MachineLearning_CN/codice_matlab/esempio_logistic_regression/main_regressione_logistica.m
+```MATLAB
+%Esempio predizioni (aggiungo 1 in prima posizione in conformita' al
+%modello)
+%I sintomi e le malattie che un paziente P1 inserisce sono: Breathing Problem, Fever, Sore Throat, Fatigue, 
+Contact with COVID Patient, Visited Public Exposed Places,
+Family working in Public Exposed Places, Wearing Masks
+
+x_trial1 = [1 1 1 1 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0];
+p1 = h(x_trial1,theta);
+disp("Probabilita' positivita' p1: ")
+disp(p1)
+
+%I sintomi e le malattie che un paziente P2 inserisce sono: Breathing Problem, Fever, Sore Throat, 
+Diabetes, Fatigue, Contact with COVID Patient, Wearing Masks, 
+Family working in Public Exposed Places
+x_trial2 = [1 1 1 0 1 0 0 0 0 0 0 0 1 0 0 1 0 1 1 1 0];
+p2 = h(x_trial2,theta);
+disp("Probabilita' positivita' p2: ")
+disp(p2)
+```
+
+```MATLAB
+OUTPUT:
+Probabilita' positivita' p1: 
+    0.5894
+
+Probabilita' positivita' p2: 
+    0.9613
+```
+
+Applicazione *Matlab* : <br>
+-> Seminario_MachineLearning_CN/codice_matlab/covid_predict.mlapp
+<br>
+<br>
+<img src="https://github.com/giuseppericcio/Seminario_MachineLearning_CN/blob/main/Figure%20Elaborato/MatlabApp.png" width="800" height="auto">
+
 
 # Progetto realizzato per soli scopi dimostrativi e didattici
 Nella seguente trattazione sono approfonditi i modelli di Regressione Lineare e di Regressione Logistica, evidenziandone le differenze e la base teorica. per l'esame di Calcolo Numerico all'Università degli Studi di Napoli Federico II.
