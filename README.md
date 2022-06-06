@@ -1,6 +1,6 @@
 # Seminario - Machine Learning: Regressione Lineare e Logistica e loro applicazioni
 
-<p align='justify'> Un algoritmo di **Machine Learning** è un algoritmo in grado di apprendere dai dati. Per capire il significato di apprendere si fa riferimento alla definizione di Tom Mitchell: </p>
+<p align='justify'> Un algoritmo di <b>Machine Learning</b> è un algoritmo in grado di apprendere dai dati. Per capire il significato di apprendere si fa riferimento alla definizione di Tom Mitchell: </p>
 
 > "Un programma apprende dall'esperienza E rispetto a un task T e a una misura delle sue prestazioni P se le prestazioni del programma sul task T, misurate da P, migliorano con l'esperienza E"
 
