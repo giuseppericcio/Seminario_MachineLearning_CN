@@ -64,3 +64,8 @@ Applicazione *Matlab* : <br>
 
 # Progetto realizzato per soli scopi dimostrativi e didattici
 Nella seguente trattazione sono approfonditi i modelli di Regressione Lineare e di Regressione Logistica, evidenziandone le differenze e la base teorica. per l'esame di Calcolo Numerico all'Università degli Studi di Napoli Federico II.
+
+***Autori***<br>
+Antonio Romano<br>
+Giuseppe Riccio<br>
+Raffaele Russo
